@@ -1,16 +1,42 @@
 <template>
   <div id="app">
-    <pocetna msg="Find other riders around you" title="Welcome to Your Moto life App"/>
+      <router-view/>
   </div>
 </template>
 
 <script>
-import pocetna from './components/pocetna.vue'
+
 
 export default {
   name: 'app',
-  components: {
-    pocetna
-  }
 }
 </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  padding: 20px;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  
+}
+</style>
