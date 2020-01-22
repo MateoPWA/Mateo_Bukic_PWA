@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueCarousel from 'vue-carousel';
 import VueRouter from "vue-router";
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
@@ -11,6 +12,7 @@ import postavke from "./components/postavke.vue";
 
 
 
+Vue.use(VueCarousel);
 Vue.use(Buefy)
 Vue.config.productionTip = false
 

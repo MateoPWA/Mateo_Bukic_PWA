@@ -15,7 +15,7 @@
                 </button>
              </p>
           </nav>
-      </div>  
+      </div>     
     </div>
      <div class="hero-body">
        <div class="container has-text-centered">
@@ -45,6 +45,19 @@
          </div>    
       </div>
     </div>
+     <div class="container has-text-centered">
+     <b-field class="file">
+              <b-upload v-model="file">
+                  <a class="button is-MEDIUM is-dark">
+                      <b-icon icon="upload"></b-icon>
+                      <span>Click to upload</span>
+                  </a>
+              </b-upload>
+              <span class="file-name" v-if="file">
+                  {{ file.name }}
+              </span>
+            </b-field>
+     </div>
   </div>
 </template>
 <style>
